@@ -1,0 +1,38 @@
+{
+  "namespace": "com.epam.vtbbulpm.nci.avro.model",
+  "type": "record",
+  "name": "NciChangeEvent",
+  "fields": [
+    {
+      "name": "dict_name",
+      "type": "string"
+    },
+    {
+      "name": "key_name",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "doc": "Event type",
+      "type": [
+        {
+          "type": "enum",
+          "name": "Type",
+          "symbols": [
+            "CREATE",
+            "UPDATE",
+            "DELETE"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "value",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "long"
+    }
+  ]
+}

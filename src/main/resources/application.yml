@@ -1,0 +1,8 @@
+server:
+  port: 9000
+spring:
+  kafka:
+      bootstrap-servers: localhost:9092
+      topic: vtbbulpm.nci.nci_change_event
+      properties:
+        schema.registry.url: http://localhost:8085
